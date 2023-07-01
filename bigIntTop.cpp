@@ -36,7 +36,7 @@ int main()
     cout << "Max : " << max << endl;
     cout << "Min : " << min << endl;
     int topla, elde = 0;
-    char *toplam = new char[max + 1]; // Dynamic memory allocation
+    char *toplam = new char[max + 1];
     for (int i = 1; i <= max; i++)
     {
         int gec1, gec2;
@@ -68,10 +68,10 @@ int main()
         toplam[max-i] = intToChar(topla);
         cout << endl;
     }
-    toplam[max] = '\0'; // Add null character at the end of the string
+    toplam[max] = '\0';
     cout << "toplam : " << toplam << endl;
 
-    delete[] toplam; // Deallocate the dynamically allocated memory
+    delete[] toplam;
 }
 
 int charToInt(char harf)
