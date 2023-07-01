@@ -65,7 +65,7 @@ int main()
         }
         cout << "Topla :" << topla << endl;
         cout << "Elde : " << elde << endl;
-        toplam[i - 1] = intToChar(topla);
+        toplam[max-i] = intToChar(topla);
         cout << endl;
     }
     toplam[max] = '\0'; // Add null character at the end of the string
